@@ -27,17 +27,17 @@ pipeline {
         }
         stage('Run') {
             steps {
-                bat 'echo Hello World'
+                echo 'Hello World'
             }
         }
     }
 
     post {
         success {
-            echo 'Build Successful ✅'
+            echo 'Build Successful'
         }
         failure {
-            echo 'Build Failed ❌'
+            echo 'Build Failed'
         }
     }
 }
