@@ -25,6 +25,11 @@ pipeline {
                 bat 'gradle assemble'
             }
         }
+        stage('Run') {
+            steps {
+                bat 'echo Hello World'
+            }
+        }
     }
 
     post {
