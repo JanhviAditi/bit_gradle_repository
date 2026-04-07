@@ -27,7 +27,7 @@ pipeline {
         }
         stage('Run') {
             steps {
-                echo 'Hello World'
+                bat 'gradle run'
             }
         }
     }
